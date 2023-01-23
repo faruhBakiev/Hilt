@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/getFragment">
+
+    <fragment
+        android:id="@+id/getFragment"
+        android:name="com.excample.hilt.ui.fragments.GetFragment"
+        android:label="fragment_get"
+        tools:layout="@layout/fragment_get">
+        <action
+            android:id="@+id/action_getFragment_to_postsFragment"
+            app:destination="@id/postsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postsFragment"
+        android:name="com.excample.hilt.ui.fragments.PostsFragment"
+        android:label="fragment_posts"
+        tools:layout="@layout/fragment_posts" />
+</navigation>
